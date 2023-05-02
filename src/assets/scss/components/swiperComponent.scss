@@ -1,0 +1,109 @@
+.swiper-cards-wrapper {
+  padding: 0 11% 20px 11%;
+  .swiper-button-next {
+    position: absolute;
+    right: -15px;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    background-image: url(../../images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &:after {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    left: -15px;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    background-image: url(../../images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    rotate: 180deg;
+    &:after {
+      display: none;
+    }
+  }
+
+  .swiper-slide-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #ffe4d8 0%, #ffcde3 100%);
+    border-radius: 0.8rem;
+    height: 110px;
+    cursor: pointer;
+    .swiper-slide-span {
+      width: 55%;
+      display: block;
+      padding: 16% 0;
+      padding-left: 1.8rem;
+      font-style: normal;
+      font-weight: 600;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 22px;
+      line-height: 130%;
+      color: #564b67;
+    }
+    .swiper-slide-img-block {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 45%;
+      max-height: 90px;
+      display: flex;
+      align-items: flex-end;
+      img {
+        max-width: 100%;
+        display: block;
+      }
+    }
+  }
+}
+.swiper {
+  width: 100%;
+}
+.swiper-wrapper {
+  width: 100%;
+}
+.swiper-slide {
+  width: 350px;
+}
+.swiper-button-prev {
+  color: rgb(86, 24, 71);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.swiper-button-next {
+  color: rgb(86, 24, 71);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-cards-wrapper {
+    margin: 0 16px;
+    padding: 0 15px 20px 15px;
+
+    .swiper-slide-card {
+      width: 100%;
+      height: 110px;
+      .swiper-slide-span {
+        width: 50%;
+        font-size: 22px;
+      }
+      .swiper-slide-img-block {
+        max-width: 120px;
+        max-height: 95px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

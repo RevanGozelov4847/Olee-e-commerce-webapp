@@ -1,0 +1,79 @@
+.newOne {
+  margin: 0 11%;
+  .flowers-swiper-wrapper-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .swiper {
+      width: 100%;
+      position: relative;
+      .swiper-wrapper {
+        width: 100%;
+      }
+      .swiper-slide {
+        width: 260px;
+        gap: 40px;
+        padding: 0 7px;
+      }
+    }
+    .swiperAll {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+    &::after {
+      display: none;
+    }
+  }
+  .swiper-button-next {
+    background-image: url(../../images/chevron-right.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: -24px;
+  }
+  .swiper-button-prev {
+    background-image: url(../../images/chevron-left.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -24px;
+  }
+  h1 {
+    padding-bottom: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 170%;
+    color: #22093a;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newOne {
+    margin: 0 2.4rem;
+    margin: 0;
+    padding: 0 15px;
+  }
+  .swiper-button-prev {
+    margin: 0;
+  }
+  .swiper-button-next {
+    margin: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  background-color: antiquewhite;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  overflow: hidden;
+  z-index: 11;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  visibility: hidden;
+  .sticky {
+    position: relative;
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    .black-icon {
+      color: rgb(16, 7, 24);
+      font-weight: 100;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 20px;
+      height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width:100%;
+    visibility: visible;
+    button {
+      display: block;
+      color: #000;
+    }
+  }
+  .iconSticky {
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    z-index: 15;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #ff8a01;
+    padding: 0 4px;
+  }
+}

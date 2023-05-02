@@ -1,0 +1,304 @@
+.form {
+  padding: 40px 170px;
+  width: 100%;
+  display: flex;
+  gap: 25px;
+  .left {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .customer {
+      background: #fff;
+      border: 0.1rem solid #f5f4f4;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 24px 32px;
+      .note {
+        .form-error-msg {
+          font-size: 12px;
+          color: red;
+          padding: 10px 0 0 5px;
+          text-transform: capitalize;
+        }
+        .noteInput {
+          background: #ffffff;
+          border: 0.1rem solid rgba(34, 9, 58, 0.05);
+          box-sizing: border-box;
+          border-radius: 0.8rem;
+          font-family: "Mark Pro" !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: rgba(0, 0, 0, 0.75);
+          padding: 12px 32px 12px 12px;
+          width: 100%;
+          transition: 0.3s;
+          height: 48px;
+          margin-top: 12px;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 170%;
+        color: rgba(16, 7, 24, 0.75);
+      }
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        color: rgba(44, 20, 79, 0.5);
+        margin-top: 8px;
+      }
+      .nameNumber {
+        width: 100%;
+        display: flex;
+        margin-top: 24px;
+        gap: 30px;
+        select {
+          margin-top: 12px;
+          width: 100%;
+          padding: 15px 20px;
+          border-radius: 12px;
+          border: 0.1rem solid #f5f4f4;
+        }
+        .name {
+          width: 50%;
+          input {
+            padding-left: 1rem;
+            font-size: 0.8rem;
+          }
+          .territory {
+            display: block;
+          }
+
+          .form-error-msg {
+            font-size: 12px;
+            color: red;
+            padding: 10px 0 0 5px;
+            text-transform: capitalize;
+          }
+        }
+        .number {
+          width: 50%;
+          input {
+            padding-left: 1rem;
+            font-size: 0.8rem;
+          }
+          .form-error-msg {
+            font-size: 12px;
+            color: red;
+            padding: 10px 0 0 5px;
+            text-transform: capitalize;
+          }
+          .clock {
+            display: block;
+          }
+        }
+        label {
+          font-family: mark pro !important;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 170%;
+          color: #100718;
+          opacity: 0.75;
+        }
+        input {
+          background: #ffffff;
+          border: 0.1rem solid rgba(34, 9, 58, 0.05);
+          box-sizing: border-box;
+          border-radius: 0.8rem;
+          font-family: "Mark Pro" !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: rgba(0, 0, 0, 0.75);
+          padding: 12px 32px 12px 2px;
+          width: 100%;
+          transition: 0.3s;
+          height: 48px;
+          margin-top: 12px;
+        }
+      }
+      .anonymous {
+        border: 0.1rem solid rgba(34, 9, 58, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0 12px;
+        padding: 16px 18px;
+        border-radius: 0.8rem;
+        .checkDelivery {
+          display: flex;
+          gap: 20px;
+        }
+        p {
+          font-family: mark pro !important;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 170%;
+          color: rgba(16, 7, 24, 0.75);
+        }
+        span {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 170%;
+          background: rgba(255, 255, 255, 0.2);
+          box-sizing: border-box;
+          border-radius: 0.8rem;
+          width: 54px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 0.1rem solid rgba(34, 9, 58, 0.05);
+        }
+      }
+    }
+  }
+  .right {
+    width: 33%;
+    .discount {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 0.1rem solid #f5f4f4;
+      box-sizing: border-box;
+      border-radius: 0.8rem;
+      padding: 24px 32px;
+      margin-bottom: 24px;
+      p,
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #59466c;
+        margin-bottom: 24px;
+      }
+      .cost {
+        display: flex;
+        justify-content: space-between;
+      }
+      .promo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 0.1rem solid rgba(5, 6, 30, 0.07);
+        padding-top: 20px;
+        input {
+          width: 70%;
+          background: rgba(188, 188, 188, 0.1);
+          border: 0.1rem solid rgba(255, 255, 255, 0.05);
+          box-sizing: border-box;
+          border-radius: 0.8rem;
+          height: 48px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          color: rgba(16, 7, 24, 0.5);
+          padding: 0 16px;
+        }
+        button {
+          cursor: pointer;
+          width: 30%;
+          background: #5f4d79;
+          border: 0.1rem solid rgba(255, 255, 255, 0.05);
+          box-sizing: border-box;
+          border-radius: 0 8px 8px 0;
+          height: 48px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          color: #fff;
+        }
+      }
+      .conclusion {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        p,
+        span {
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+    }
+    .confirm {
+      cursor: pointer;
+      font-family: mark pro !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 170%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ff8a01;
+      border-radius: 0.8rem;
+      padding: 20px 0;
+      border: none;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .basket {
+    h1 {
+      font-size: 24px;
+    }
+  }
+  .form {
+    padding: 40px 10px;
+    flex-direction: column;
+    .left {
+      width: 100%;
+      margin-bottom: -30px;
+      .customer {
+        padding: 20px 24px;
+        .anonymous {
+          p {
+            font-size: 13px;
+          }
+        }
+        p {
+          font-size: 16px;
+          font-weight: 900;
+        }
+        .nameNumber {
+          flex-direction: column;
+          gap: 5px;
+          label {
+            font-weight: 600;
+          }
+          .name {
+            width: 100%;
+          }
+          .number {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .right {
+      width: 100%;
+      .confirm {
+        padding: 14px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,207 @@
+.navBar {
+  padding: 10px 170px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  width: 100vw;
+  .contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    .navbar1 {
+      padding-left: 20px;
+      width: 10%;
+    }
+    .navbar2 {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8rem;
+      .navbarCenter {
+        width: 50%;
+        .forme {
+          width: 100%;
+        }
+      }
+      .navbarRight {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        .userIcon {
+          display: flex;
+          flex-direction: column;
+          border: none;
+          background-color: transparent;
+          color: rgba(16, 7, 24, 0.5);
+          cursor: pointer;
+        }
+        .tbtruck {
+          font-size: 2.8rem;
+        }
+        p {
+          color: rgba(16, 7, 24, 0.5);
+        }
+        span {
+          color: #fff;
+        }
+        .logOut {
+          border: none;
+          cursor: pointer;
+          background-color: white;
+          .log {
+            color: rgba(16, 7, 24, 0.5);
+          }
+        }
+      }
+    }
+    .navbarElse {
+      display: none;
+    }
+  }
+}
+  form{
+    max-width: 100%;
+    margin: 10px 50px;
+    .responsiveSearch{
+      font-weight: normal;
+      width: 100%;
+      background: #ffffff;
+      transition: 0.3s;
+      height: 48px;
+      border: 0.1rem solid rgba(34, 9, 58, 0.05);
+      box-sizing: border-box;
+      border-radius: 8px;
+      opacity: 0.5;
+      font-size: 16px;
+      color: rgba(16, 7, 24, 0.5);
+      padding: 6px 32px 6px 20px;
+      &:focus {
+        outline: none;
+        border-color: orange;
+      }
+  }
+  }
+
+.navbarBottom {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .dropdownAlls {
+      display: flex;
+      gap: 65px;
+      cursor: pointer;
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        .dropbtn {
+          padding: 16px;
+          border: none;
+          background-color: white;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 150%;
+          font-family: Mark Pro;
+          font-style: normal;
+          color: #1e0f34;
+          cursor: pointer;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 190px;
+          border-radius: 8px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 4;
+          a {
+            color: #1e0f34;
+            opacity: 0.75;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+        }
+      }
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    p,
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: #1e0f34;
+      opacity: 0.75;
+      padding: 12px 8px;
+    }
+    .dropdown {
+      display: flex;
+      gap: 30px;
+    }
+    .navbarbottomRight {
+      border: 1px solid rgba(16, 7, 24, 0.1);
+      display: flex;
+      align-items: center;
+      height: 40px;
+      padding: 0 10px;
+      border-radius: 10px;
+      span {
+        color: rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+      }
+      .locationIcon {
+        color: rgba(0, 0, 0, 0.75);
+        padding-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navBar {
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    .contain {
+      .navbar1 {
+        padding-left: 0;
+      }
+      .navbar2 {
+        display: none;
+        .navbarCenter {
+          display: none;
+        }
+        .navbarRight {
+          display: none;
+        }
+      }
+      .navbarElse {
+        display: flex;
+        .searchIcon {
+          color: rgba(16, 7, 24, 0.5);
+          opacity: 0.7;
+        }
+        .locationIcon {
+          color: rgba(16, 7, 24, 0.5);
+          opacity: 0.7;
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+  .navbarBottom {
+    display: none;
+  }
+}

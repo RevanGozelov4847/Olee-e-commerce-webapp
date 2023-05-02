@@ -1,0 +1,33 @@
+.cartNumber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  margin-right: 26px;
+  cursor: pointer;
+  font-size: 1rem;
+  .cartIcon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  .numberIcon {
+    position: absolute;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 120%;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    background: #ff8a01;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -0.4rem;
+    left: 0.8rem;
+  }
+}

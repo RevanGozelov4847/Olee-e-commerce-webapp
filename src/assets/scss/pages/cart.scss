@@ -1,0 +1,134 @@
+.basket {
+  background-image: url(https://olee.az/assets/img/page-header.png);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 170px;
+  .navigation {
+    display: flex;
+    gap: 10px;
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 170%;
+      display: flex;
+      align-items: center;
+      color: rgba(5, 6, 30, 0.75);
+    }
+    h1 {
+      font-family: mark pro !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 170%;
+      color: #100718;
+    }
+  }
+}
+.carts {
+  padding: 40px 160px;
+  display: flex;
+  gap: 20px;
+  .cartProducts {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .priceButton {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    .totalPrice {
+      width: 100%;
+      background: #fff;
+      border: 0.1rem solid #f5f4f4;
+      box-sizing: border-box;
+      border-radius: 0.8rem;
+      padding: 24px 32px;
+      margin-bottom: 12px;
+      .cost {
+        display: flex;
+        justify-content: space-between;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #59466c;
+        margin-bottom: 24px;
+      }
+      .conclusion {
+        border-top: 0.1rem solid rgba(5, 6, 30, 0.07);
+        padding-top: 24px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 170%;
+        color: #59466c;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    button {
+      font-family: mark pro !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 170%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ff8a01;
+      border-radius: 0.8rem;
+      padding: 16px 0;
+      margin: 16px 0 64px;
+      border: none;
+      width: 100%;
+    }
+   
+    .buttons{
+      .confirm{
+        cursor: pointer;
+        a{
+          color: white;
+          margin: 0;
+          padding: 0;
+          height: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .basket {
+    padding: 30px 20px;
+    background-position: center;
+  }
+  .carts {
+    flex-direction: column;
+    padding: 40px 20px;
+    .cartProducts {
+      width: 100%;
+    }
+    .priceButton {
+      width: 100%;
+      .buttons{
+        .confirm{
+          cursor: pointer;
+          a{
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

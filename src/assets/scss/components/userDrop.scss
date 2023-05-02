@@ -1,0 +1,54 @@
+.icon-container {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  top: 8%;
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: white;
+    margin-top: 15px;
+    .button {
+      background-color: none;
+      border: none;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 130%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ff8a01;
+      border-radius: 0.8rem;
+      padding: 16px 0;
+      margin: 4px 40px 0px 0;
+      border: none;
+      width: 180px;
+      cursor: pointer;
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.user-drop-icon-parent {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  .userIcon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .fa-user::before {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(16, 7, 24, 0.5);
+  }
+}

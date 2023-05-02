@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+.container {
+  margin: 0 11% 35px 11%;
+  .moreUs {
+    position: relative;
+    width: 100%;
+    display: flex;
+    border-radius: 0.8rem;
+    background: rgb(255, 228, 216);
+    .swiperSide {
+      width: 57%;
+      .swiper {
+        height: 95%;
+        .imgContainer {
+          cursor: pointer;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 8px;
+            object-fit: cover;
+            background-position: center;
+            position: relative;
+          }
+        }
+      }
+    }
+    .aboutUs {
+      font-family: "Nunito Sans", sans-serif;
+      padding: 8% 2.4rem;
+      width: 43%;
+      display: flex;
+      gap: 15px;
+      .icons-adaptive {
+        .title {
+          width: 100%;
+        }
+      }
+      p {
+        text-align: center;
+        color: rgb(30, 15, 52);
+        font-weight: 100;
+        width: 100%;
+      }
+      .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 170%;
+        color: rgb(44, 20, 79);
+        opacity: 0.75;
+        margin-bottom: 0.6rem;
+      }
+      .icon {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        color: rgb(44, 20, 79);
+      }
+      .leftAbout {
+        gap: 30px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .delivery {
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .preperation {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .rightAbout {
+        gap: 30px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .payment {
+          margin-bottom: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .satisfaction {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      height: 95%;
+      position: relative;
+      .swiper-button-next {
+        position: absolute;
+        top: 425px;
+        right: 6%;
+        margin-right: 0.5rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url(../../images/arrow-right.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        &:after {
+          display: none;
+        }
+      }
+      .swiper-button-prev {
+        top: 425px;
+        left: 78%;
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 0.5rem;
+        position: absolute;
+        background-image: url(../../images/arrow-right.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        rotate: 180deg;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0 2rem;
+    .moreUs {
+      display: flex;
+      flex-direction: column;
+      .swiperSide {
+        width: 100%;
+      }
+      .aboutUs {
+        width: 100%;
+        padding: 2.4rem 1.6rem 3.2rem;
+        .title {
+          font-size: 13px;
+        }
+        p {
+          font-size: 11px;
+        }
+        .leftAbout {
+          width: 50%;
+        }
+        .rightAbout {
+          width: 50%;
+          .payment {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}

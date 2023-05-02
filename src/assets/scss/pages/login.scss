@@ -1,0 +1,98 @@
+.login {
+  height: 62vh;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0 170px;
+  .imageContainer {
+    width: 400px;
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+  .form-control {
+    padding-top: 30px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .form-control-error-msg {
+      font-size: 12px;
+      color: red;
+      padding: 12px 0 0 5px;
+    }
+    label {
+      font-family: "Nunito Sans", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 170%;
+      color: #100718;
+      font-size: 16px;
+      padding-top: 30px;
+    }
+    input {
+      background: #fff;
+      border: 0.1rem solid rgba(34, 9, 58, 0.05);
+      border-radius: 8px;
+      font-family: "Mark Pro" !important;
+      font-style: normal;
+      line-height: 2rem;
+      color: rgba(0, 0, 0, 0.75);
+      padding: 0.5rem 3.2rem 0.5rem 1rem;
+      width: 90%;
+      transition: 0.3s;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    button {
+      cursor: pointer;
+      font-family: "Nunito Sans", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 170%;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 0.6rem 0;
+      margin: 1.6rem 0 6.4rem;
+      border: none;
+      width: 90%;
+      background: #ff8a01;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    margin: 0 20px;
+    max-width: 100%;
+    overflow: hidden;
+    .imageContainer {
+      max-width: 550px;
+      img {
+        width: 100%;
+      }
+    }
+    .form-control {
+      width: 100%;
+      padding-top: 0;
+      label {
+        max-width: 100%;
+      }
+      input {
+        max-width: 100%;
+      }
+      button {
+        max-width: 100%;
+      }
+    }
+  }
+}
